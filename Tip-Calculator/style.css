@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(https://media.gettyimages.com/photos/mix-cut-fruits-in-plates-on-ice-slab-picture-id1325602477);
+   background-size: cover;
+}
+
+.calculator {
+    width: 65vh;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 13px;
+    text-align: left;
+    height: 94vh;
+}
+
+h1 {
+    font-size: 29px;
+    color: maroon;
+    text-align: center;
+}
+
+.input-group {
+    margin: 80px 0;
+}
+
+label {
+    display: block;
+}
+
+input, select {
+    width: 40%;
+    padding: 0;
+}
+
+button {
+    background-color: maroon;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 65vh;
+    height: 8vh;
+}
+
+#tip-amount {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
