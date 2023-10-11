@@ -7,7 +7,7 @@ body {
     height: 100vh;
     margin: 0;
     background-image: url(https://media.gettyimages.com/photos/mix-cut-fruits-in-plates-on-ice-slab-picture-id1325602477);
-   background-size: cover;
+    background-size: cover;
 }
 
 .calculator {
@@ -18,7 +18,10 @@ body {
     padding: 13px;
     text-align: left;
     height: 94vh;
+    max-width: 500px; 
+    margin: 0 auto; 
 }
+
 
 h1 {
     font-size: 29px;
@@ -54,23 +57,33 @@ button {
     margin-top: 20px;
     text-align: center;
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
     body {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 100%;
-        overflow: scroll;
+        background-size: auto;  
     }
 
     .calculator {
-        width: 95%; 
-        margin: 10px; 
+        width: 90%;
+    }
+
+    input, select {
+        width: 100%; 
     }
 
     button {
-        width: 100%; 
+        width: 100%;
     }
 }
+
+h1 {
+    font-size: 29px;
+    color: maroon;
+    text-align: center;
+}
+
+.input-group {
+    margin: 20px 0;
+}
+
 
 
