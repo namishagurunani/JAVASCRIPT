@@ -12,7 +12,7 @@
         <h1>Charles' Tip Calculator</h1>
         <div class="input-group">
             <label for="bill-amount" style="color: maroon;font-weight: 600;">How much was your bill?</label>
-           <span style="color: maroon; font-weight: 600;">Rs.</span> <input  type="text" id="bill-amount"> 
+           <span style="color: maroon; font-weight: 600;">Rs.</span> <input  type="number" id="bill-amount"> 
         </div>
         <div class="input-group">
             <label for="service-rating" style="color: maroon; font-weight: 600;">How was your Service?</label>
@@ -25,16 +25,28 @@
                 <option value="0.05">5%  - Terrible</option>
             </select>
         </div>
-        <label for="num-people" style="color: maroon; font-weight: 600; margin-bottom: -11vh;">How many people are sharing the bill?</label>
+        <label for="num-people" style="color: maroon; font-weight: 600; margin-bottom: -10vh;">How many people are sharing the bill?</label>
         <div class="input-group">
-            <input type="text" id="num-people" >
+            <input type="number" id="num-people" >
             <span style="color: maroon; font-weight: 600;">people</span> </div>
+            <div class="input-group">
+                <label for="currency" style="color: maroon; font-weight: 600;">Select Currency</label>
+                <select id="currency" name="currency">
+                    <option value="a">-- Choose an option --</option>
+                    <option value="USD">US Dollar (USD)</option>
+                    <option value="EUR">Euro (EUR)</option>
+                    <option value="GBP">British Pound (GBP)</option>
+                    <option value="INR">INR Rupee (INR)</option>
+                    <!-- Add more currency options as needed -->
+                </select>
+            </div>
+            
         <button id="calculate">Calculate!</button>
-        <div id="tip-amount"></div>
+        <div id="tip-amount">
+    
+        </div>
+
     </div>
-    <audio id="myautoload" autoplay>
-        <source src="let-the-mystery-unfold-122118.mp3" type="audio/mpeg">
-        </audio>
     <script src="script.js"></script>
 </body>
 </html>
